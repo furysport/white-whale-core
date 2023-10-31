@@ -22,6 +22,10 @@ function init_chain_env() {
     source <(cat "$project_root_path"/scripts/deployment/deploy_env/mainnets/juno.env)
     ;;
 
+  furya)
+    source <(cat "$project_root_path"/scripts/deployment/deploy_env/mainnets/furya.env)
+    ;;
+
   juno-testnet)
     source <(cat "$project_root_path"/scripts/deployment/deploy_env/testnets/juno.env)
     ;;
