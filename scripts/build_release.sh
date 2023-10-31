@@ -6,7 +6,7 @@ function display_usage() {
   echo "Release builder"
   echo -e "\nUsage:./build_release.sh [flags].\n"
   echo -e "Available flags:\n"
-  echo -e "  -c \tThe chain where you want to deploy (migaloo|juno|terra|...)"
+  echo -e "  -c \tThe chain where you want to deploy (migaloo|juno|terra|furya|...)"
 }
 
 if [ -z $1 ]; then
@@ -31,7 +31,7 @@ flag=""
 
 case $chain in
 
-juno | terra)
+juno | terra | furya)
   flag="-osmosis_token_factory"
   ;;
 migaloo)
