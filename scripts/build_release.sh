@@ -66,7 +66,7 @@ docker_options=(
 
 # Optimized builds
 if [[ "$arch" == "aarch64" || "$arch" == "arm64" ]]; then
-  docker_command=("docker" "run" "${docker_options[@]}" "cosmwasm/workspace-optimizer-arm64:0.14.0$flag")
+  docker_command=("docker" "run" "${docker_options[@]}" "cosmwasm/workspace-optimizer-arm64:0.14.0")
 else
   docker_command=("docker" "run" "${docker_options[@]}" "cosmwasm/workspace-optimizer:0.14.0$flag")
 fi
